@@ -1,0 +1,649 @@
+/*
+Template Name: AppointFly
+Template URI: https://coderitsolution.com;
+Author: Utpol Odekary
+Author URL: https://utpol.me
+Description:This is Test Business Website
+Tags: Business website, html template
+Version: 1.0.0
+ 
+Table of Content
+================
+** Import CSS Files **
+** Default CSS **
+1: Header Top Area 
+2: Header Banner Area 
+
+*/
+
+
+/*Import Fonts CSS*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+  /***********************/
+ /**** Default CSS ******/
+/***********************/
+
+html{
+  font-size: 62.5%;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+p,ul,li,h1,h2,h3,h4,h5,h6{
+  margin: 0;
+	padding: 0;
+}
+img{
+  max-width: 100%;
+}
+h1{
+  font-weight: 700;
+  font-size: 7rem;
+}
+h2{
+  font-size: 6.3rem;
+  font-weight: 600;
+  line-height: 6.5rem;
+}
+h3{
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.section-padding{
+  padding: 8rem 0;
+}
+
+  /***********************/
+ /**** Header Top CSS ***/
+/***********************/
+
+/* menu */
+.header-top-area{
+  padding: 2rem 0;
+  background: #DFE4EA;
+  position: sticky;
+  top: 0;
+  z-index: 99999999;
+}
+.header-top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img{
+  max-width: 150px;
+}
+.menu ul{
+  display: flex;
+  align-items: center;
+}
+.menu ul li{
+  list-style: none;
+  margin: 0 2rem;
+}
+.menu ul li a{
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  transition: .5s;
+}
+.menu ul li a:hover{
+  color: #345DEE;
+}
+.active-menu{
+  color: #345DEE !important;
+}
+.header-button {
+  display: flex;
+  align-items: center;
+}
+.header-button a{
+  display: inline-block;
+  text-decoration: none;
+  color: #18214D;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  transition: .5s;
+}
+.header-button a:hover{
+  color: #FFF;
+  background: #345DEE;
+}
+.header-button .active{
+  margin-left: 1rem;
+  color: #FFF !important;
+  background: #345DEE;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  transition: .5s;
+}
+
+ .menu-bar i{
+  display: none;
+  font-size: 2rem;
+  border: 1px solid #333333;
+  border-radius: .5rem;
+  box-sizing: border-box;
+  margin-left: 2rem;
+  transform: .5s;
+  cursor: pointer;
+  padding: 1rem;
+}
+.menu-bar i:hover{
+  background: #323f6e;
+  color: #FFF;
+}
+
+
+  /**********************/
+ /** Banner Area CSS ***/
+/**********************/
+.banner-area{
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+.banner-content{
+  max-width: 50rem;
+}
+.banner-img{
+  text-align: right;
+}
+.banner-img img{
+  max-width: 70%;
+}
+.banner-content >p{
+  font-size: 1.8rem;
+  padding-bottom: 1.8rem;
+  padding-top: 2.3rem;
+}
+.suscribe-form form{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.suscribe-form form input[type="email"]{
+  background: #DFE4EA;
+  border-radius: 1rem;
+  padding: 1rem;
+  flex-basis:calc(70% - 10px);
+  outline: none;
+  border: none;
+}
+.suscribe-form form input[type="email"]::placeholder{
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #000;
+  opacity: 1;
+}
+.suscribe-form form input[type="submit"]{
+  flex-basis: 30%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  background: #345DEE;
+  color: #FFF;
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  padding: .9rem 1.5rem;
+  transition: .5s;
+}
+.suscribe-form form input[type="submit"]:hover{
+  background: #323f6e;
+}
+.banner-content p{
+  padding-top: 1.5rem;
+}
+
+  /**********************/
+ /** Passion Area CSS ***/
+/**********************/
+.section-title h2{
+  max-width: 80rem;
+  text-align: center;
+  margin: auto;
+}
+.section-title p{
+  padding-top: 2.5rem;
+  max-width: 60rem;
+  text-align: center;
+  margin: auto;
+}
+
+/* single-passion-row */
+.single-passion-row{
+  margin-top:10rem;
+}
+.passion-content span{
+  color:red;
+}
+.passion-content h3{
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  max-width: 47rem;
+}
+.passion-content p{
+  max-width: 43rem;
+  margin-bottom: 1.5rem;
+}
+.passion-content a{
+  display: inline-flex;
+  align-items: center;
+  font-weight: 700;
+  position: relative;
+}
+.passion-content a:after{
+  content: "";
+  position: absolute;
+  height: 2px;
+  right: 0;
+  bottom: 3px;
+  background: #000;
+  width: calc(100% - 40px);
+}
+.passion-content a i{
+  font-size: 3rem;
+  color: #345DEE;
+  margin-right: 1rem;
+}
+.passion-img{
+  text-align: right;
+}
+.passion-img img{
+  max-width: 70%;
+}
+.single-passion-row:nth-child(odd) .passion-img{
+  text-align: left;
+}
+.single-passion-row:nth-child(odd) .passion-content{
+  float: right;
+}
+
+   /***********************/
+  /*** Team  Area CSS ****/
+/************************/
+.team-member{
+  border: 1px solid gray;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.team-image img{
+  height: 22rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+.team-image{
+  position: relative;
+  overflow: hidden;
+}
+.team-image:after{
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 1rem;
+  background: rgba(10,92,255,.5);
+  visibility: hidden;
+  opacity: 0;
+  transition: .5s;
+}
+.team-member:hover .team-image:after{
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+}
+.team-member p{
+  font-size: 2rem;
+  font-weight: 600;
+  color: #18214D;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+.next-icon a{
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+  color: #18214D;
+}
+.next-icon a i{
+  color: #DAEBF7;
+  font-size: 2rem;
+  margin-left: 1rem;
+  transition: .5s;
+}
+.next-icon a i:hover{
+  color:#18214D;
+}
+
+  /************************/
+ /*** Connect  Area CSS **/
+/************************/
+
+.connect-apps-area .section-title h2{
+  max-width: 100%;
+  padding-bottom: 6rem;
+}
+
+.apps{
+  max-width: 80rem;
+  margin: auto;
+  position: relative;
+}
+.single-apps{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.single-apps img{
+  max-width: 10rem;
+  height: 4rem;
+}
+
+.owl-carousel .owl-nav button.owl-next, 
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+	background: #DAEBF7;
+	border: none;
+	font-size: 2.5rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+	top: 50%;
+	transform: translateY(-50%);
+  transition: .5s;
+}
+.owl-carousel .owl-nav button.owl-next{
+  right: -4%
+}
+.owl-carousel .owl-nav button.owl-prev{
+  left: -4%
+}
+
+.owl-carousel .owl-nav button.owl-next:hover{
+  background: #323f6e;
+  color: #FFF;
+} 
+.owl-carousel .owl-nav button.owl-prev:hover{
+  background: #323f6e;
+  color: #FFF;
+}
+
+  /************************/
+ /*** Connect  Area CSS **/
+/************************/
+.payments-content{
+  max-width: 49rem;
+}
+
+.payments-content p{
+  margin: 3rem 0;
+}
+.button-style2 a{
+  display: inline-block;
+  color: #FFF;
+  background: #345DEE;
+  border-radius: 1rem;
+  padding: 1.5rem 3rem;
+  transition: .5s;
+}
+.button-style2 a:hover{
+  background: #323f6e;
+}
+.button-style2 p{
+  margin-top: 5rem;
+}
+.payments-img img{
+  max-width: 70%;
+  float: right;
+}
+
+  /************************/
+ /*** Footer  Area CSS ***/
+/************************/
+.footer-top{
+  padding-bottom: 5rem;
+}
+.single-footer-items h4{
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+
+  /*************************/
+ /**footer-copyright CSS **/
+/*************************/
+.footer-subscribs p{
+  padding-bottom: 2rem;
+}
+.footer-copyright{
+  border-top: 1px solid #DFE4EA;
+  padding: 4rem 0;
+}
+.social-icons{
+  margin-top: 4rem;
+}
+.social-icons ul{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.social-icons ul li{
+  margin-left: 1.5rem;
+}
+.social-icons ul li i{
+  display: block;
+  height: 5rem;
+  width: 5rem;
+  font-size: 1.8rem;
+  background: #DAEBF7;
+  color: rgb(93, 94, 95);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 5rem;
+  transition: .5s;
+}
+.social-icons ul li i:hover{
+  background: #323f6e;
+  color: #FFF;
+}
+
+
+
+  /*************************/
+ /****Pricing Page  CSS ***/
+/*************************/
+
+  /*************************/
+ /**pricing Area CSS ******/
+/*************************/
+.pricing-fast-div{
+  background:#FFF;
+  height: 100%;
+}
+.single-price-main{
+  padding-bottom: 10rem;
+}
+.changing-time{
+  margin: 8rem 0;
+} 
+.changing-time >label{
+  padding-right: 1rem;
+}
+.changing-content span{
+  display: block;
+}
+.changing-content h4{
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-bottom: 2rem;
+}
+.changing-content ul li i{
+  margin-left: 1rem;
+}
+.changing-content ul li{
+  margin-bottom: .7rem;
+}
+.single-price-main{
+  text-align: center;
+  
+}
+.single-price-main h4{
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+.single-price{
+  background: #EFF2F6;
+  padding: 0 2rem;
+  border-radius: 1rem;
+  height: 100%;
+  position: relative;
+}
+.single-price h2{
+  padding-top: 2rem;
+}
+.single-price ul{
+  margin-top: 7rem;
+  text-align: left;
+  padding-bottom: 6rem;
+}
+.single-price ul li{
+  margin-bottom: .7rem;
+}
+.single-price ul li i{
+  margin-left: 1rem;
+}
+
+.single-price .button-style2{
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+  /*************************/
+ /**Frequently Area CSS ***/
+/*************************/
+.heading-size{
+  font-size: 2rem;
+  font-weight: 600;
+}
+.strong-text strong{
+  max-width: 100px;
+  display: block;
+  margin-bottom: 2rem;
+}
+.accordion-button::after {
+	flex-shrink: 0;
+	width: 1.25rem;
+	height: 1.25rem;
+	margin-left: auto;
+	content: "";
+	background-image: url('../images/plus1.png');
+	background-repeat: no-repeat;
+	background-size: 1.25rem;
+	transition: transform .2s ease-in-out;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: url('../images/minus1.png');
+	transform: rotate(180deg);
+}
+.accordion-button:focus {
+	z-index: 3;
+	border-color: #86b7fe;
+	outline: 0;
+	box-shadow: 0 0 0 0;
+}
+
+
+
+  /*************************/
+ /**Industries page CSS ***/
+/*************************/
+
+  /*************************/
+ /****Gellary Area CSS ****/
+/*************************/
+.gellary-items ul{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+.gellary-items ul li{
+  max-width: 13rem;
+  width: 100%;
+  text-align: center;
+  border: 2px solid #335DEE;
+  color: #335DEE;
+  font-weight: 600;
+  padding: .8rem 0;
+  margin-bottom: 1rem;
+  transition: .5s;
+  cursor: pointer;
+}
+.gellary-items ul li:hover{
+  color: #FFF;
+  background: #335DEE;
+}
+.active-item{
+  background: #345DEE;
+  color: #FFF !important;
+}
+
+
+  /*************************/
+ /******Found Page CSS ****/
+/*************************/
+.found-heading h1{
+  max-width: 55rem;
+  width: 100%;
+}
+
+  /*************************/
+ /*** Features Page CSS ***/
+/*************************/
+.changing-content h3{
+  padding-top: 9rem;
+  padding-bottom: 1.8rem;
+  font-size: 2.2rem;
+}
+.price-padding ul{
+  margin-top: 0;
+  padding: 6rem 0;
+}
+.footer-pt{
+  padding-top: 15rem;
+}
+
+  /*************************/
+ /** Frequently Page CSS **/
+/*************************/
+
+  /*************************/
+ /****Section-Title CSS ***/
+/*************************/
+.title-underline h2{
+  max-width: 75%;
+  border-bottom: 2px solid #000;
+}

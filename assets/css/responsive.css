@@ -1,0 +1,133 @@
+
+@media all and (max-width: 991px){
+	/* home-page start */
+	.menu-bar i{
+		display: block;
+	}
+	.menu{
+		display: none;
+		position: absolute;
+		background:#15355a;
+		right: 0;
+		top: 8.5rem;
+		width: 30%;
+		height: 30rem;
+		z-index: 999999999999999;
+	}
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu ul li{
+		margin: 1rem 0;
+	}
+	.menu ul li a{
+		color: #FFF;
+		transition: .5s;
+	}
+	.menu ul li a:hover{
+		color: #FFF;
+		transform: scale(1.1);
+	}
+	.banner-img {
+		margin-top: 7rem;
+		text-align: center;
+	}
+	.banner-img img{
+		width: 80%;
+	}
+	.team-member{
+		margin-bottom: 3rem;
+	}
+	.payments-img{
+		text-align: center;
+	}
+	.payments-img img{
+		max-width: 70%;
+		float: none;
+	}
+	.single-footer-items{
+		margin-bottom: 4rem;
+	}
+	/* home-page end */
+
+	/* pricing-page start */
+	.single-price-main{
+		padding-bottom: 12rem;
+	}
+	.pricing-fast-div{
+		padding-bottom: 12rem;
+	}
+	.single-price-main:nth-child(3){
+		order: 1;
+	}
+	.single-price-main:nth-child(2){
+		order: 2;
+	}
+	/* pricing-page end */
+
+}
+
+@media all and (max-width: 768px){	
+	.footer-copyright{
+		display: flex;
+		flex-direction: column;
+	}
+	.social-icons ul{
+		justify-content: center;
+	}
+	.single-passion-row:nth-child(odd){
+		flex-direction: column-reverse;
+	}
+	.single-passion-row:nth-child(even) .passion-img{
+		text-align: center;
+	}
+	.single-passion-row:nth-child(odd) .passion-img{
+		text-align: center;
+	}
+
+
+
+	/* pricing-page */
+	/* pricing-area */
+	.pricing-main-div{
+		max-width: 40rem;
+		margin: auto;
+	}
+}
+
+@media all and (max-width:570px){
+	.banner-content h1{
+		font-size: 4.5rem;
+	}
+	.section-title h2{
+		font-size: 3.5rem;
+		line-height: 4rem;
+	}
+	.passion-content h3{
+		font-size: 2.5rem;
+	}
+	.payments-content h2{
+		font-size: 4.5rem;
+	}
+	.logo img{
+		max-width: 120px;
+	}
+	.single-footer-items{
+		text-align: center;
+	}
+	.suscribe-form form{
+		display: flex;
+		flex-direction: column;
+	}
+	.suscribe-form form input[type="email"]{
+		flex-basis:100%;
+		margin-bottom: 2rem;
+	}
+	/* owl-carousel */
+	.owl-carousel .owl-nav button.owl-next{
+		right: -0%
+	}
+	.owl-carousel .owl-nav button.owl-prev{
+		left: -0%
+	}
+} 
